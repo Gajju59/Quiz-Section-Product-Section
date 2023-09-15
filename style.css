@@ -1,0 +1,196 @@
+
+@font-face {
+    font-family: 'Gotham';
+    src: url(Gotham-Font/GothamMedium.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    /* display: flex; */
+    /* justify-content: center; */
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+    /* border-top:8px #008254 solid; */
+}
+
+.main {
+    /* text-align: center; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    /* border-top:8px #008254 solid; */
+    width: 50%;
+}
+
+.main {
+    /* text-align: center; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px;
+    border-top:8px #008254 solid;
+    width: 50%;
+    margin: 0 auto; /* Add this line to center the .main section */
+}
+
+.label {
+    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.label2 {
+    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+
+
+.block {
+    margin: 10px;
+    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
+    background-color: #008254;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.block:hover {
+    opacity: 0.8;
+    transition: 1s ease-in-out;
+}
+
+.bar {
+    width: 100%;
+    background-color: #008254;
+    height: 60px;
+    margin-bottom: 50px;
+
+}
+
+.buttons2{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.send-button{
+    padding: 10px 20px;
+    background-color: #008254;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .main{
+        width: 80%;
+        border-top:8px #008254 solid;
+    }
+  
+    .bar{
+        display: none;
+    }
+}
+
+
+/*Product-section*/
+
+.product-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 60vh;
+}
+
+.product-image {
+    text-align: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
+    color: #008254;
+}
+h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.buy-button, .review-button {
+    padding: 10px 20px;
+    background-color: #008254;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Gotham';
+    font-family: 'Montserrat', sans-serif;
+}
+
+.review-button{
+    background-color: #fffb00;
+    color: black;
+}
+
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    .product-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    
+    .product-image {
+        text-align: left;
+    }
+    
+    .product-info {
+        text-align: left;
+    }
+
+}
