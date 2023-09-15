@@ -1,52 +1,34 @@
-
-@font-face {
-    font-family: 'Gotham';
-    src: url(Gotham-Font/GothamMedium.ttf);
-}
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-body {
-    /* display: flex; */
-    /* justify-content: center; */
-    align-items: center;
-    /* height: 100vh; */
+/* Reset some default styles */
+body, h2, p {
     margin: 0;
-    /* border-top:8px #008254 solid; */
+    padding: 0;
 }
 
-.main {
+/* Apply responsive styling using CSS Grid */
+.bs-main {
     /* text-align: center; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 30px;
     /* border-top:8px #008254 solid; */
     width: 50%;
+    margin: 0 auto; /* Center the .bs-main section */
 }
 
-.main {
-    /* text-align: center; */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 30px;
-    border-top:8px #008254 solid;
-    width: 50%;
-    margin: 0 auto; /* Add this line to center the .main section */
-}
-
-.label {
+.bs-label {
     font-family: 'Gotham';
     font-family: 'Montserrat', sans-serif;
     font-size: 40px;
     font-weight: 600;
 }
 
-.label2 {
+.bs-label2 {
     font-family: 'Gotham';
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     font-weight: 400;
 }
 
-
-
-.block {
+.bs-block {
     margin: 10px;
     font-family: 'Gotham';
     font-family: 'Montserrat', sans-serif;
@@ -56,30 +38,29 @@ body {
     border-radius: 5px;
 }
 
-label {
+.bs-label-option {
     cursor: pointer;
 }
 
-.block:hover {
+.bs-block:hover {
     opacity: 0.8;
     transition: 1s ease-in-out;
 }
 
-.bar {
+.bs-bar {
     width: 100%;
     background-color: #008254;
     height: 60px;
     margin-bottom: 50px;
-
 }
 
-.buttons2{
+.bs-buttons2 {
     display: flex;
     justify-content: center;
     align-items: center;    
 }
 
-.send-button{
+.bs-send-button {
     padding: 10px 20px;
     background-color: #008254;
     color: white;
@@ -92,20 +73,18 @@ label {
 }
 
 @media only screen and (max-width: 768px) {
-    .main{
+    .bs-main {
         width: 80%;
         border-top:8px #008254 solid;
     }
   
-    .bar{
+    .bs-bar {
         display: none;
     }
 }
 
-
-/*Product-section*/
-
-.product-container {
+/* Product-section */
+.bs-product-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -116,30 +95,31 @@ label {
     height: 60vh;
 }
 
-.product-image {
+.bs-product-image {
     text-align: center;
 }
 
-.product-image img {
+.bs-product-image img {
     max-width: 100%;
     height: auto;
 }
 
-.product-info {
+.bs-product-info {
     display: flex;
     flex-direction: column;
     align-items: left;
     text-align: left;
 }
 
-h1 {
+.bs-txt-h1 {
     font-size: 44px;
     margin-bottom: 10px;
     font-family: 'Gotham';
     font-family: 'Montserrat', sans-serif;
     color: #008254;
 }
-h2 {
+
+.bs-txt-h2 {
     font-size: 30px;
     margin-bottom: 10px;
     font-family: 'Gotham';
@@ -147,20 +127,20 @@ h2 {
     font-weight: 500;
 }
 
-p {
+.bs-txt-p {
     font-size: 16px;
     margin-bottom: 20px;
     font-family: 'Gotham';
     font-family: 'Montserrat', sans-serif;
 }
 
-.buttons {
+.bs-buttons {
     display: flex;
     gap: 10px;
     margin-bottom: 50px;
 }
 
-.buy-button, .review-button {
+.bs-buy-button, .bs-review-button {
     padding: 10px 20px;
     background-color: #008254;
     color: white;
@@ -172,25 +152,23 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
-.review-button{
+.bs-review-button {
     background-color: #fffb00;
     color: black;
 }
 
-
 /* Media Queries for Responsive Design */
 @media (min-width: 768px) {
-    .product-container {
+    .bs-product-container {
         grid-template-columns: 1fr 1fr;
         align-items: center;
     }
     
-    .product-image {
+    .bs-product-image {
         text-align: left;
     }
     
-    .product-info {
+    .bs-product-info {
         text-align: left;
     }
-
 }
