@@ -157,7 +157,7 @@ p {
 .buttons {
     display: flex;
     gap: 10px;
-    
+    margin-bottom: 50px;
 }
 
 .buy-button, .review-button {
